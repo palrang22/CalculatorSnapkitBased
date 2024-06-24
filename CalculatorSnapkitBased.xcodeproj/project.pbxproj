@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		E725F5522C29677700DFA049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725F5512C29677700DFA049 /* AppDelegate.swift */; };
 		E725F5542C29677700DFA049 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725F5532C29677700DFA049 /* SceneDelegate.swift */; };
-		E725F5562C29677700DFA049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725F5552C29677700DFA049 /* ViewController.swift */; };
-		E725F5592C29677700DFA049 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E725F5582C29677700DFA049 /* Base */; };
+		E725F5562C29677700DFA049 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725F5552C29677700DFA049 /* Main.swift */; };
 		E725F55B2C29677900DFA049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E725F55A2C29677900DFA049 /* Assets.xcassets */; };
 		E725F55E2C29677900DFA049 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E725F55D2C29677900DFA049 /* Base */; };
+		E725F5672C2968D200DFA049 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E725F5662C2968D200DFA049 /* SnapKit */; };
+		E725F5692C29793F00DFA049 /* CalculatorUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725F5682C29793F00DFA049 /* CalculatorUI.swift */; };
+		E725F56B2C29795100DFA049 /* Logics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E725F56A2C29795100DFA049 /* Logics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E725F54E2C29677700DFA049 /* CalculatorSnapkitBased.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorSnapkitBased.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E725F5512C29677700DFA049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E725F5532C29677700DFA049 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E725F5552C29677700DFA049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E725F5582C29677700DFA049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E725F5552C29677700DFA049 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		E725F55A2C29677900DFA049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E725F55D2C29677900DFA049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E725F55F2C29677900DFA049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E725F5682C29793F00DFA049 /* CalculatorUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUI.swift; sourceTree = "<group>"; };
+		E725F56A2C29795100DFA049 /* Logics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E725F5672C2968D200DFA049 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,10 +62,11 @@
 			children = (
 				E725F5512C29677700DFA049 /* AppDelegate.swift */,
 				E725F5532C29677700DFA049 /* SceneDelegate.swift */,
-				E725F5552C29677700DFA049 /* ViewController.swift */,
-				E725F5572C29677700DFA049 /* Main.storyboard */,
 				E725F55A2C29677900DFA049 /* Assets.xcassets */,
 				E725F55C2C29677900DFA049 /* LaunchScreen.storyboard */,
+				E725F5552C29677700DFA049 /* Main.swift */,
+				E725F5682C29793F00DFA049 /* CalculatorUI.swift */,
+				E725F56A2C29795100DFA049 /* Logics.swift */,
 				E725F55F2C29677900DFA049 /* Info.plist */,
 			);
 			path = CalculatorSnapkitBased;
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CalculatorSnapkitBased;
+			packageProductDependencies = (
+				E725F5662C2968D200DFA049 /* SnapKit */,
+			);
 			productName = CalculatorSnapkitBased;
 			productReference = E725F54E2C29677700DFA049 /* CalculatorSnapkitBased.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = E725F5452C29677700DFA049;
+			packageReferences = (
+				E725F5652C2968D100DFA049 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E725F54F2C29677700DFA049 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +138,6 @@
 			files = (
 				E725F55B2C29677900DFA049 /* Assets.xcassets in Resources */,
 				E725F55E2C29677900DFA049 /* Base in Resources */,
-				E725F5592C29677700DFA049 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +148,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E725F5562C29677700DFA049 /* ViewController.swift in Sources */,
+				E725F5562C29677700DFA049 /* Main.swift in Sources */,
+				E725F5692C29793F00DFA049 /* CalculatorUI.swift in Sources */,
 				E725F5522C29677700DFA049 /* AppDelegate.swift in Sources */,
 				E725F5542C29677700DFA049 /* SceneDelegate.swift in Sources */,
+				E725F56B2C29795100DFA049 /* Logics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E725F5572C29677700DFA049 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E725F5582C29677700DFA049 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E725F55C2C29677900DFA049 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +301,6 @@
 				INFOPLIST_FILE = CalculatorSnapkitBased/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shk.CalculatorSnapkitBased;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,7 +331,6 @@
 				INFOPLIST_FILE = CalculatorSnapkitBased/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,9 +340,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shk.CalculatorSnapkitBased;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E725F5652C2968D100DFA049 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E725F5662C2968D200DFA049 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E725F5652C2968D100DFA049 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E725F5462C29677700DFA049 /* Project object */;
 }
